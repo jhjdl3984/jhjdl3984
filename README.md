@@ -9,8 +9,7 @@
   
   ## 👀 About Me
   #### :raising_hand: I am currently studying to become a backend developer.
-  #### :fire: I aim to become a ...<br/>
-  #### :mortar_board: ...
+  #### 📧: jhj3984@naver.com
   <br/>
   <br/>
   
