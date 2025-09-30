@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=blur&section=header&reversal=false&height=400&text=jhjdl3984)
+![header](https://capsule-render.vercel.app/api?type=blur&section=header&reversal=false&height=400&text=jhjdl3984&fontSize=60)
 
 ## Hi there 👋
 
