@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>설문조사 양식</title>
+    </head>
+    <body>
+        <header>
+         <h1>설문조사 양식</h1>
+         <fieldset>
+            <legend>이메일 찾기</legend>
+            <a href="https://www.naver.com" target="_blank">네이버로 이동</a>
+            <br>
+            <a href="https://www.google.com" target="_blank">구글로 이동</a>
+            <br>
+            <a href="https://www.daum.net" target="_blank">다음으로 이동</a>
+         </fieldset>
+            <p><strong>모든 항목에 빠짐없이 체크해주십시오.</strong></p>
+        </header>
+        <hr>
+        <main>
+         <form>
+            <fieldset>
+                <legend>개인정보</legend>
+                <label for="name">이름</label>
+                <input type="text" id="name" name='name' placeholder="이름을 입력하세요">
+                <br>
+                <label for="email">이메일</label>
+                <input type="email" id="email" name="email" placeholder="이메일을 입력하세요">
+            </fieldset>
+            <fieldset>
+                <legend>설문</legend>
+                <ul>
+                    <li><strong>이 설문조사는 통계 목적을 위한 것이며, 개인적인 용도로 사용되지 않습니다.</strong></li>
+                </ul>
+                <ol>
+                <p><li>당신의 연령대를 선택해주세요.</p></li>
+                <input type="radio" id="teen" name="age">
+                <label for="teen">10대</label>
+                <input type="radio" id="twenty" name="age">
+                <label for="twenty">20대</label>
+                <input type="radio" id="thirty" name="age">
+                <label for="thirty">30대</label>
+                <input type="radio" id="fourty" name="age">
+                <label for="fourty">40대</label>
+                <input type="radio" id="fifty" name="age">
+                <label for="fifty">50대</label>
+                <input type="radio" id="other" name="age">
+                <label for="other">그 외</label>
+
+                <p><li>당신의 취미는 무엇인가요?(중복가능)</p></li>
+                <input type='checkbox' id="soccer" name="hobby">
+                <label for="soccer">축구</label>
+                <input type='checkbox' id="piano" name="hobby">
+                <label for="piano">피아노</label>
+                <input type='checkbox' id="game" name="hobby">
+                <label for="game">게임</label>
+                <input type='checkbox' id="shopping" name="hobby">
+                <label for="shopping">쇼핑</label>
+                <input type='checkbox' id="other" name="hobby">
+                <label for="other">그 외(<input type='text' id='other' placeholder="취미를 입력해주세요">)
+                
+                <p><li>당신이 자주 사용하는 온라인 쇼핑몰을 선택해주세요</li></p>
+                    <select>
+                        <option>올리브영</option>
+                        <option>쿠팡</option>
+                        <option>무신사</option>
+                        <option>카카오 선물하기</option>
+                    </select>
+
+                <p><li>아래의 표를 보고 느낀 생각을 써주세요.</li></p>
+                    <table border="1">
+                        <caption><mark>
+                            각 포털/검색 서비스의 국내 월간 사용자 수
+                            </mark>
+                        </caption>
+                        <tr>
+                            <th>네이버</th>
+                            <th>구글</th>
+                            <th>다음</th>
+                        </tr>
+                        <tr>
+                            <td>약 3,892만 명</td>
+                            <td>약 2,897만 명</td>
+                            <td>약 802만 명</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <textarea row="50" cols="45" name="think" placeholder="당신의 생각을 입력해주세요"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>기타의견</legend>
+                <textarea row="3" cols="30" name="comment" placeholder="자유롭게 작성해주세요"></textarea>
+            </fieldset>
+            <input type="submit">
+         </form>
+        </main>
+        <hr>
+        <footer>
+         <p>입력하느라 수고하셨습니다.</p>
+        </footer>
+        <span><span style='color: pink;'>&copy;</span> <span style="color: rgb(237, 35, 129);">조현정</span></span>
+    </body>
+</html>
