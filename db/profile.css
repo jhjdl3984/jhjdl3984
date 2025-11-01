@@ -1,0 +1,53 @@
+*{
+    text-align: center;
+    font-family: "Sunflower", monospace;
+}
+
+html{
+    background-color: #CFE6F7;
+    font-size: 16px;
+}
+
+body{
+    width: 640px;
+    margin: auto;   /* 너비에서 남는 여백을 동일하게 분배 */
+}
+
+h1{
+    font-size: 48px;
+}
+
+img{
+    width: 200px;
+    height:200px;
+    border: 3px solid #f1f4f6;
+    border-radius: 100px;
+}
+
+p{
+    font-size: 1.18rem;
+}
+
+#funfacts{
+    line-height: 60px;
+}
+
+/* #one{
+    line-height: 32px;
+}
+
+#three{
+    line-height: 32px;
+}
+
+#four{
+    line-height: 32px;
+} */
+
+.line{
+    line-height: 32px;
+}
+
+#mbti{
+    color: rgb(20%, 0%, 80%)
+}
