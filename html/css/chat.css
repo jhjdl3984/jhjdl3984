@@ -1,0 +1,108 @@
+/* 전체*{ */
+*{
+    box-sizing: border-box;
+    font-family: "Sunflower", monospace;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    margin: 0px;
+}
+
+.container{
+    height: 100%;
+    background-color: rgb(251, 198, 221);
+}
+
+/* 스크린 크기 조정(main) */
+.chat-screen{
+    height: calc(100% - 120px);
+}
+
+/* 유저 정보 표시되는 부분 */
+.user{
+    background-color: rgb(252, 248, 250);
+    padding: 16px;
+    height: 80px;
+}
+
+.user__column{
+    float: left;
+}
+
+.user__pic{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: rgb(251, 198, 221);
+}
+
+.user__nick, .user__count{
+    margin: 5px;
+}
+
+.user__count{
+    font-size: 12px;
+    color: gray;
+    display: inline;
+}
+
+/* 채팅 입력 창 */
+.chat-form{
+    height: 120px;
+    background-color: white;
+}
+
+.chat-form__field{
+    height: 120px;
+}
+
+.chat-form__msg{
+    float: left;
+    width: calc(100% - 120px);
+    height: 120px;
+    border: none;
+    resize: none;
+    font-size: 18px;
+    padding: 7px;
+}
+
+.chat-form__bt{
+    float: right;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    font-size: 18px;
+}
+
+.chat-form__msg:focus{
+    outline: none;
+}
+
+.chat-form__bt:active{
+    background-color: rgb(195, 154, 172);
+}
+
+select{
+    width: 18px;
+}
+
+select + input{
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    width: 50px;
+    height: 30px;
+    background-color: rgb(210, 210, 210);
+    border-radius: 15%;
+}
+
+.exit:active{
+    background-color: gray;
+}
