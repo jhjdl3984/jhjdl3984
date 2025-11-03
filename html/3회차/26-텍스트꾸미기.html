@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>텍스트 꾸미기</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
+        <style>
+            *{
+                font-family: "Sunflower", monospace;
+            }
+
+            html{
+                font-size: 8px;
+            }
+
+            body{
+                font-size: 32px;
+            }
+
+            /* em은 부모 폰트사이즈에 숫자만큼 곱함 
+               rem은 html 폰트사이즈에 숫자만큼 곱함 */
+            #first{
+                font-size: 3rem;
+                /* 글꼴 두께 => weight: 100 ~ 900 */
+                font-weight: 100;
+                /* 한 줄 사이의 높이(첫 문장의 위에도 생김) => height */
+                line-height: 32px;
+                /* 정렬 => align: left, right, center, justify
+                   justify => 한 문장의 왼쪽과 오른쪽을 사이트 창 끝에 맞춤 */
+                text-align: justify;
+            }
+
+        </style>
+    </head>
+    <body>
+        <p id="first">에스프레소와 물을 섞으면 아메리카노가 됩니다.</p>
+        <p>에스프레소와 물을 섞으면 아메리카노가 됩니다.</p>
+    </body>
+</html>
