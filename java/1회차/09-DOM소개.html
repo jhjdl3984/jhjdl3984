@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM 소개 & 콘텐츠 변경하기</title>
+    </head>
+    <body>
+        <p>대한민국의 역습입니다!</p>
+        <p class="comment">손흥민 몰고 갑니다, 크로스!</p>
+        <p class="comment" id="goal">조규성의 환상적인 마무리~~ 골!</p>
+
+        <script>
+           const p = document.querySelector('p')
+           console.log(p.textContent)
+        //    .textContent = ''
+        //    => 본래 텍스트를 '' 안에 있는 텍스트로 변환해서 화면에 반환
+           p.textContent = '우르과이의 역습입니다!'
+
+           console.log(p.textContent)
+
+           const p1 = document.querySelector('p')
+        //    document.querySelector('.comment') => 같은 클래스중 제일 처음꺼
+           const p2 = document.querySelector('.comment')
+           const p3 = document.querySelector('#goal')
+
+           console.log(p1.textContent)
+           console.log(p2.textContent)
+           console.log(p3.textContent)
+
+           p1.textContent = '우루과이의 역습입니다!'
+           p2.textContent = '수아레즈의 멋진 패스'
+           p3.textContent = '포를란의 논스톱 슛, 골~~'
+        </script>
+    </body>
+</html>
