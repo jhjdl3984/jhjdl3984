@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>요소의 유형</title>
+    <style>
+        p{
+            display: inline;
+        }
+        p{
+            /* inline-block
+               => 요소의 공간차지는 inline처럼 되고, width, height같은 크기지정에 필요한 속성을 쓸 수 있음 */
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+        p{
+            /* 개발자도구에서 코드보이지만 웹 화면상엔 안보임
+               => 밑에 있는 span태그인 하하만 있는 것처럼 왼쪽 상단에 나타남 */
+            display: none;
+        }
+        
+        span{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <p>경제</p>
+    <p>정치</p>
+    <p>과학</p>
+    <p>생활</p>
+    <span>하하</span>
+</body>
+</html>
