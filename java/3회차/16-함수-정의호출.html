@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>함수 정의하고 호출하기</title>
+    </head>
+    <body>
+        <div id="container"></div>
+
+        <script>
+
+            createParagraph()
+            createParagraph()
+            createParagraph()
+            createParagraph()
+            createParagraph()
+
+            function createParagraph(){
+                const p = document.createElement('p')
+                p.textContent = '새롭게 만들어진 문단 태그!'
+                document.querySelector('#container').append(p)
+            }
+
+
+            // 선언식으로 만든 함수는 호이스팅 가능
+            // 호이스팅: 함수 만드는 부분이 호출하는 부분보다 아래에 있어도 O
+            sayYes()
+            // 표현식 => 호이스팅 X
+            sayNo()
+
+            // 함수 선언
+            function sayYes(){
+                console.log(1)
+                console.log(2)
+                alert('Yes!')
+            }
+
+            sayYes()
+
+            // 함수 표현식
+            const sayNo = function(){
+                alert('No!')
+                console.log(3)
+            }
+
+            sayNo()
+        </script>
+    </body>
+</html>
