@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>사용자 정보 입력받고 출력하기</title>
+        <style>
+            #answer{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="name"></h1>
+        <p id="animal"></p>
+        <p id="fruit"></p>
+        <p id="answer"></p>
+
+        <script>
+            window.alert('4가지 질문에 대답해주세요.')
+
+            const nameElement = document.querySelector('#name')
+            let name = prompt('당신의 이름은?')
+            nameElement.textContent = name
+            console.log(name)
+
+            const animalElement = document.querySelector('#animal')
+            let animal = prompt('좋아하는 동물은?')
+            animalElement.textContent = `좋아하는 동물은 ${animal} 입니다!`
+            console.log(animal)
+
+            document.querySelector('#fruit')
+            .textContent = `좋아하는 과일은 ${prompt('좋아하는 과일은?')} 입니다!`
+
+            const answerElement = document.querySelector('#answer')
+            let answer = confirm('성실히 답변했습니까?')
+            answerElement.textContent = `성실히 답변? : ${answer}`
+           
+        </script>
+    </body>
+</html>
