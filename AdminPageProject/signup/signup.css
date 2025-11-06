@@ -1,0 +1,74 @@
+*{ box-sizing: border-box;}
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #eaeaea; 
+}
+#container{
+    width: 640px;
+    margin: 60px auto 0;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+form{
+    padding: 20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 15px; 
+}
+
+.table{
+    width: 80%;
+    margin: auto;
+}
+
+th{
+    text-align: center;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+td{
+    width: 60%;
+    text-align: left;
+    padding-left: 5px;
+}
+
+input{
+    width: 240px;
+    padding: 5px;
+}
+
+input[type='radio']{
+    width: initial;
+}
+
+input[type='submit']{
+    width: 80px;
+}
+
+.buttons{
+    margin: 10px 0 0 0;
+    text-align: right;
+}
+
+/* 다크모드 */
+.dark-mode {
+    background-color: #121212;
+    color: #eceaea;
+}
+
+body.dark-mode form{
+    background-color: rgb(74, 73, 73);
+}
+
+body.dark-mode th, body.dark-mode td {
+    background-color: rgb(74, 73, 73);
+    color: #e5e4e4;
+}
+
+body.dark-mode #signupBtn{
+    background-color: rgb(18, 18, 157);
+    color: #e5e4e4;
+    border-color: rgb(190, 190, 248);
+}
