@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>의사 클래스 & 의사 요소</title>
+    <style>
+        /* 의사 클래스 */
+        .menu{
+            padding: 10px;
+            border-bottom: 1px solid black;
+        }
+        .menu > li{
+            display: inline-block;
+            text-align: center;
+        }
+        li > a{
+            display: inline-block;
+            width: 80px;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        /* hover => 마우스를 댔을 때 */
+        a:hover{
+            color: white;
+            background-color: gray;
+        }
+        /* active => 마우스로 클릭중에 보일 효과 */
+        a:active{
+            color:white;
+            background-color: black;
+        }
+        /* li에서 형제중에 3번째 */
+        /* li:nth-child(3){
+            font-size: 20px;
+        } */
+        /* n개 => 모든 요소 */
+        li:nth-child(n){
+            /* 2n개 => 짝수의 모든 요소
+               2n-1개 => 짝수의 모든 요소 */
+            font-size: 20px;
+        }
+
+        /* 의사 요소 */
+        /* a::first-letter{
+            /* 모든 a의 첫번째 글자에 적용 */
+            /* color: white; */
+        /* } */
+        /* a::after{
+            content: '보기';
+            color: yellow;
+        } */    
+        a::before{
+            content: '보기';
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href='#'>사전</a></li>
+        <li><a href='#'>뉴스</a></li>
+        <li><a href='#'>증권</a></li>
+        <li><a href='#'>지도</a></li>
+    </ul>
+</body>
+</html>

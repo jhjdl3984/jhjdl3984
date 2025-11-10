@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>배경을 깔아보자</title>
+        <style>
+            div{
+                width: 300px;
+                height: 300px;
+                padding: 20px;
+                border: 20px double green;
+
+                background-color: yellowgreen;
+                /* clip: border-box;(기본값, content부터 border까지 색칠)
+                         padding-box;(content부터 padding까지 색칠)
+                         content-box;(content만 색칠) */
+                background-clip: border-box;
+
+                background-image: url(images/star.jpg);
+                /* div영역 사이즈보다 작으면 콜라주처럼 같은 사진이 여러개 붙어있는 것으로 표현됨 */
+                background-size: 200px 200px;
+                /* 영역보다 작더라도 하나만 보이게 하고 싶다면? */
+                background-repeat: no-repeat;
+                /* 가로로만 반복을 하고 싶다면? */
+                background-repeat: repeat-x;
+                /* 세로로만 반복을 하고 싶다면? */
+                background-repeat: repeat-y;
+
+                /* 이미지의 시작위치 정하기 (padding-box가 기본값) */
+                background-origin: content-box;
+                /* 이미지 위치 지정 (center, top, bottom, left, right)*/
+                background-position: bottom;
+                background-position: left center;
+                /* 이렇게도 사용가능 => x값(가로) y값(세로); 
+                   y축은 기본 y축과 반대 (음수면 위로, 양수면 아래로) */
+                background-position: 100px 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
