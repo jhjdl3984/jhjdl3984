@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ data.title }}</title>
+</head>
+<body>
+    <h1>Hi, {{ data.user }}</h1>
+    
+    {% if data.is_admin %}
+        <p>You have admin priviliges.</p>
+    {% else %}
+        <p> You do not have admin priviliges.</p>
+    {% endif %}
+
+    <ul>
+        {% for item in data.item_list %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+<!-- return render_template('index.html', data=data, title=title,...)
+=> 이렇게 넣지 않으면 {{ 변수 }}에 data. 붙여줘야함 -->
